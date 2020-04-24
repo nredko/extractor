@@ -5,5 +5,5 @@ Usage: `java Extract -u <USER> -p <PASSWORD> -s <SERVER:PORT> -d <DATABASE> -q "
   
   example:
   ```
-  java extract -u sa -p sapass -s ZENBOOK:5000 -d pubs2 -q "select 'c:\tmp\extract\' || au_id || '.' || format_type as fname, pic from au_pix"
+  java Extract -u sa -p sapass -s ZENBOOK:5000 -d pubs2 -q "select 'c:\tmp\extract\' || au_id || '.' || format_type as fname, pic from au_pix"
   ```
