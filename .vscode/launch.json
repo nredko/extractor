@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug",
+            "request": "launch",
+            "mainClass": "Extract",
+            "projectName": "Extractor",
+            "args": [
+                "-u", "sa",
+                "-p", "sapass",
+                "-s", "ZENBOOK:5000",
+                "-d", "pubs2",
+                "-q", "select 'c:\\tmp\\xxx\\' || au_id || '.' || format_type as fname, pic from au_pix"
+            ]
+        }
+    ]
+}
