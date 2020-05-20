@@ -58,7 +58,7 @@ public class Extract {
                 os = new FileOutputStream(file);
                 byte[] content = new byte[1024];
                 int size = 0;
-                while ((size = is.read(content)) != -1) {
+                while ((size = is.read(content)) > 0) {
                     os.write(content, 0, size);
                 }
             }
